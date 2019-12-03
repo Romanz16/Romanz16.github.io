@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-.wrapper1 {
+.wrapper {
     width: 100vw;
     height: 100vh;
     padding: 15px;
@@ -33,6 +33,15 @@
     padding: 10px;
     font-family: sans-serif;
 }
+.contentShrink {
+    width: 100%;
+    max-width: 600px;
+    height: 96%;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background-color: white;
+    padding: 15px;
+}
 
 .title {
     display: flex;
@@ -58,6 +67,19 @@
     cursor: pointer;
 }
 
+.shrink {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    background-color: rgb(246, 246, 246);
+    color: rgb(170, 170, 170);
+    line-height: 13px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
 img {
     width: 14px;
     height: 14px;
@@ -78,10 +100,12 @@ img {
     line-height: 1.5em;
     border: none;
 }
+
 .textareaExpand:focus {
     outline: 0;
     background-color: white;
 }
+
 .textareaShrink {
     height: 100%;
     background-color: white;
@@ -115,31 +139,6 @@ textarea::-webkit-scrollbar-thumb {
     transition: 0.3s;
     background-color: rgb(55, 163, 109);
 }
-
-
-.contentShrink {
-    width: 100%;
-    max-width: 600px;
-    height: 90%;
-    border: 1px solid transparent;
-    border-radius: 15px;
-    background-color: white;
-    padding: 15px;
-}
-
-.shrink {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5px;
-    background-color: rgb(246, 246, 246);
-    color: rgb(170, 170, 170);
-    line-height: 13px;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-
 
 /* @media screen and (min-width: 1900px) {
     .contentShrink {

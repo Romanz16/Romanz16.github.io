@@ -6,10 +6,11 @@ getSel('.btnSubmit').onclick = function () {
 }
 getSel('#expand').onclick = function () {
     if (view === 'shrink') {
-        getSel('.wrapper1').style.backgroundColor = 'rgb(51, 153, 102)';
+        getSel('.wrapper').style.backgroundColor = 'rgb(51, 153, 102)';
+        getSel('.wrapper').style.padding = '15px 0';
         getSel('.header').style.display = 'none';
         getSel('#content').className = 'contentShrink';
-        getSel('#textComment').classList.add('textareaShrink'); 
+        getSel('#textComment').classList.add('textareaShrink');
         getSel('.btnSubmit').style.display = 'none';
         getSel('.titleQuestion').style.display = 'none';
         this.innerHTML = '<img src="image/shrink.svg" alt=""> SHRINK';
@@ -17,10 +18,11 @@ getSel('#expand').onclick = function () {
         view = 'expand';
     }
     else {
-        getSel('.wrapper1').style.backgroundColor = 'transparent';
+        getSel('.wrapper').style.backgroundColor = 'transparent';
+        getSel('.wrapper').style.padding = '15px';
         getSel('.header').style.display = 'block';
         getSel('#content').className = 'contentExpand';
-        getSel('#textComment').classList.remove('textareaShrink'); 
+        getSel('#textComment').classList.remove('textareaShrink');
         getSel('.btnSubmit').style.display = 'block';
         getSel('.titleQuestion').style.display = 'block';
         this.innerHTML = '<img src="image/expand.svg" alt=""> EXPAND';
