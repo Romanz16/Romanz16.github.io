@@ -12,7 +12,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* font-family: sans-serif; */
 }
 
 .header {
@@ -107,7 +106,7 @@ textarea::-webkit-scrollbar-thumb {
     color: white;
     font-size: 18px;
     text-transform: uppercase;
-    border: 1px solid rgb(102, 204, 153);
+    border: 1px solid transparent;
     border-radius: 2px;
 }
 
